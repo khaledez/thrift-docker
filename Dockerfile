@@ -1,6 +1,6 @@
 FROM ubuntu:20.04 as builder
-
-ENV THRIFT_VERSION v0.15.0
+ARG THRIFT_VERSION=v0.16.0
+ENV THRIFT_VERSION ${THRIFT_VERSION}
 
 RUN buildDeps=" \
 		automake \

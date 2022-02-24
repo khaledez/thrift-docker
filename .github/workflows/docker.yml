@@ -31,4 +31,5 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: khaledez/thrift:0.15.0
+          build-args: THRIFT_VERSION=v0.16.0
+          tags: khaledez/thrift:0.16.0, khaledez/thrift:latest
